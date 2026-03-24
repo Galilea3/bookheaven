@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Haven - Contact</title>
+    <meta name="description" content="Contact Book Haven and share your reading preferences.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Book Haven</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="genres.html">Genres</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-page">
+        <h2>Join Our Reading Community</h2>
+        <p>Fill in the form below to share your reading preferences.</p>
+
+        <form id="contactForm">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname">
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+
+            <label for="genre">Favourite Genre:</label>
+            <select id="genre" name="genre">
+                <option value="">Select a genre</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Romance">Romance</option>
+                <option value="Thriller">Thriller</option>
+                <option value="Classic">Classic</option>
+                <option value="Science Fiction">Science Fiction</option>
+            </select>
+
+            <label>Favourite Format:</label>
+            <div class="radio-group">
+                <input type="radio" id="paperback" name="format" value="Paperback">
+                <label for="paperback">Paperback</label>
+
+                <input type="radio" id="ebook" name="format" value="E-book">
+                <label for="ebook">E-book</label>
+
+                <input type="radio" id="audiobook" name="format" value="Audiobook">
+                <label for="audiobook">Audiobook</label>
+            </div>
+
+            <label for="author">Favourite Author:</label>
+            <input type="text" id="author" name="author">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">I want to receive the newsletter</label>
+            </div>
+
+            <button type="button" onclick="validateForm()">Submit</button>
+        </form>
+
+        <p id="formMessage"></p>
+    </section>
+
+    <footer>
+        <p>© 2026 Book Haven | Mª de Galilea Gabarrón Pay</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

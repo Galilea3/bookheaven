@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Haven - Search</title>
+    <meta name="description" content="Search for books and discover new titles at Book Haven.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Book Haven</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="genres.html">Genres</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="search-page">
+        <h2>Search for a Book</h2>
+        <p>Type a book title and discover new reads.</p>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Enter a book title">
+            <button onclick="searchBooks()">Search</button>
+        </div>
+
+        <div id="results" class="results-container"></div>
+    </section>
+
+    <footer>
+        <p>© 2026 Book Haven | Mª de Galilea Gabarrón Pay</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,296 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFF9F2;
+    color: #4B2E2B;
+}
+
+header {
+    background-color: #4B2E2B;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-family: Georgia, serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #F5EBDD;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #D4A373;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #F5EBDD;
+}
+
+.hero h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+}
+
+.hero button {
+    background-color: #A3B18A;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero button:hover {
+    background-color: #588157;
+}
+
+.featured {
+    padding: 40px;
+    text-align: center;
+}
+
+.book-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.book {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.book h3 {
+    margin: 10px 0 5px 0;
+    font-family: Georgia, serif;
+}
+
+footer {
+    background-color: #4B2E2B;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .book-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.filters {
+    margin-bottom: 20px;
+}
+
+.filters button {
+    background-color: #A3B18A;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.filters button:hover {
+    background-color: #588157;
+}
+/* GENRES PAGE */
+.genres-page {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.accordion-container {
+    max-width: 800px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+.accordion {
+    background-color: #A3B18A;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: 18px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.accordion:hover {
+    background-color: #588157;
+}
+
+.panel {
+    background-color: white;
+    display: none;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.search-page {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.search-box {
+    margin: 20px 0;
+}
+
+.search-box input {
+    padding: 10px;
+    width: 250px;
+    max-width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-box button {
+    background-color: #A3B18A;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-box button:hover {
+    background-color: #588157;
+}
+
+.results-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.result-book {
+    background-color: white;
+    width: 220px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result-book img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.result-book h3 {
+    font-size: 18px;
+    margin: 10px 0 5px 0;
+    font-family: Georgia, serif;
+}
+
+.result-book p {
+    font-size: 14px;
+}
+
+.contact-page {
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-page h2,
+.contact-page p {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form select,
+form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.radio-group,
+.checkbox-group {
+    margin-top: 10px;
+}
+
+.radio-group label,
+.checkbox-group label {
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+form button {
+    background-color: #A3B18A;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #588157;
+}
+
+#formMessage {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
