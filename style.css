@@ -294,3 +294,15 @@ form button:hover {
     margin-top: 20px;
     font-weight: bold;
 }
+.audio {
+    text-align: center;
+    padding: 40px;
+    background-color: #F5EBDD;
+}
+
+.audio audio {
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+    max-width: 90%;
+}
