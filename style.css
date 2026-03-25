@@ -306,3 +306,14 @@ form button:hover {
     width: 300px;
     max-width: 90%;
 }
+.video {
+    text-align: center;
+    padding: 40px;
+}
+
+.video video {
+    width: 400px;
+    max-width: 90%;
+    border-radius: 10px;
+    margin-top: 15px;
+}
